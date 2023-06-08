@@ -3,7 +3,9 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
 }
-
+kotlin {
+    jvmToolchain(17)
+}
 android {
     namespace 'com.swlove.mvi'
     compileSdk 33
